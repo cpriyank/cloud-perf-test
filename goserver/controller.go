@@ -1,11 +1,10 @@
-package go_server
+package goserver
 
 import (
+	"context"
 	"fmt"
 	"google.golang.org/appengine/datastore"
-	"google.golang.org/api/iterator"
 	"strconv"
-	"golang.org/x/net/context"
 )
 
 func Create(c context.Context, data *StepData) (*StepData, error) {
